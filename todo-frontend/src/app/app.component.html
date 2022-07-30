@@ -1,0 +1,49 @@
+<section class="text-gray-600 body-font">
+  <div
+    class="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
+  >
+    <div class="text-center lg:w-2/3 w-full">
+      <h1
+        class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+      >
+        ToDo App
+      </h1>
+      <div class="py-4">
+        <input
+          type="text"
+          id="input-todo"
+          class="w-1/2 border border-gray-300 py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+          placeholder="Your ToDo"
+        />
+        <button
+          class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        >
+          Submit
+        </button>
+      </div>
+
+      <div
+        class="container flex flex-col mx-auto w-full items-center justify-center bg-white dark:bg-gray-800 rounded-lg shadow"
+      >
+        <ul class="flex flex-col divide divide-y">
+          <li class="flex flex-row border">
+            <div class="select-none flex flex-1 items-center p-4">
+              <div class="flex-1 pl-1 mr-16">
+                <div class="text-gray-600 dark:text-gray-200 text-sm">
+                  Description comes here
+                </div>
+              </div>
+              <button
+                class="text-white bg-red-600 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              >
+                Delete
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<router-outlet></router-outlet>
